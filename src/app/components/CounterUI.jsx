@@ -4,6 +4,7 @@ import {
   increment,
   decrement,
   incrementByAmount,
+  decrementByAmount
 } from "../../features/counterSlice.jsx";
 
 export const CounterUI = () => {
@@ -31,6 +32,12 @@ export const CounterUI = () => {
             onClick={() => dispatch(incrementByAmount(Number(amount) || 0))}
           >
             + Add Amount
+          </button>
+          <button
+            className="btn-add-5"
+            onClick={() => dispatch(decrementByAmount(Number(amount) || 0))}
+          >
+            - Substract Amount
           </button>
         </div>
       </div>
