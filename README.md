@@ -1,7 +1,7 @@
  
 ---
 
-## **Redux vs. React Redux vs. Redux Toolkit**
+## **Redux vs. React Redux vs Redux Toolkit**
 
 Understanding the distinction is key for any developer:
 
