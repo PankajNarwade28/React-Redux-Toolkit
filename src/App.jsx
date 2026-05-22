@@ -1,19 +1,22 @@
  
 import './App.css'
-import AuctionStats from './app/components/AuctionStats';
-import { CounterUI } from './app/components/CounterUI' 
+import Navbar from './app/components/Navbar';
+import ProductCatalog from './app/components/ProductCatalog';
+import Cart from './app/components/Cart';
 
 function App() { 
 
   return (
     <> 
-        {/* Counter UI from before */}
-        <CounterUI />
-        
-        <hr style={{ margin: '40px 0', opacity: 0.1 }} />
-        
-        {/* New Auction Stats Page */} 
-        <AuctionStats />
+        <Navbar />
+        <div className="app-layout">
+          <div className="catalog-section">
+            <ProductCatalog />
+          </div>
+          <div className="cart-section">
+            <Cart />
+          </div>
+        </div>
     </>
 );
 } 
