@@ -14,6 +14,10 @@ const Cart = () => {
     dispatch(cartActions.decreaseQuantity(id));
   };
 
+  const handleIncreaseQuantity = (item) => {
+    dispatch(cartActions.addItem(item));
+  };
+
   const handleClearCart = () => {
     dispatch(cartActions.clearCart());
   };
@@ -50,6 +54,12 @@ const Cart = () => {
             <div className="flex flex-col items-end gap-2">
               <p className="text-sm font-bold text-slate-800">${item.totalPrice.toFixed(2)}</p>
               <div className="flex gap-2">
+              <button
+                className="rounded-md bg-slate-200 px-2 py-1 text-sm font-semibold text-slate-700 transition hover:bg-slate-300"
+                onClick={() => handleIncreaseQuantity(item)}
+              >
+                +
+              </button>
               <button
                 className="rounded-md bg-slate-200 px-2 py-1 text-sm font-semibold text-slate-700 transition hover:bg-slate-300"
                 onClick={() => handleDecreaseQuantity(item.id)}
