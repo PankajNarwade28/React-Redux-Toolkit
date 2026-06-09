@@ -3,7 +3,8 @@
 
 ## **Redux vs. React Redux vs Redux Toolkit**
 
-Understanding the distinction is key for any developer:
+Understanding the distinction is key for any developer 
+:
 
 * **Redux:** The core library. It is "UI agnostic," meaning it can be used with Vanilla JS, Angular, or Vue. It manages the state container.
 * **React Redux:** The official **bridge**. It allows your React components to talk to the Redux store. Without this, React wouldn't know when the Redux state has changed.
